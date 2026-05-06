@@ -1,18 +1,466 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- Remix Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+        integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awosome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Css -->
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <header class="header"></header>
-    <main class="main"></main>
-    <footer class="footer"></footer>
+    <header class="header">
+        <nav>
+            <div class="logo">
+                <img src="./assets/img/logo.png" class="logo-image">
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#" class="#">Home</a></li>
+                    <li><a href="nav-links" class="#">Shop</a></li>
+                    <li><a href="nav-links" class="#">Blog</a></li>
+                    <li><a href="nav-links" class="#">About</a></li>
+                    <li><a href="nav-links" class="#">Contact</a></li>
+                    <li><a href="nav-links" class="#"><i class="ri-shopping-bag-line"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="main" id="main">
+        <section class="home section" id="home">
+            <div class="homecontent">
+                <p class="homepara1">Trade-in-offer</p>
+                <h1 class="homehead1">Super Value Deal</h1>
+                <h1 class="homehead2">On all Product</h1>
+                <p class="homepara2">Save more with coupons & up to 70% off !</p>
+                <div class="homebutt">
+                    <a href="#"><img src="./assets/img/button.png" alt="">Shop now</a>
+                </div>
+            </div>
+        </section>
+        <section class="feature section" id="feature">
+            <div class="main-feature">
+                <div class="feature-card fcd1">
+                    <img src="./assets/img/features/f1.png" class="feature-img">
+                    <a class="free-shipping">Free Shipping</a>
+                </div>
+                <div class="feature-card fcd2">
+                    <img src="./assets/img/features/f2.png" class="feature-img">
+                    <a class="online-order">Online Order</a>
+                </div>
+                <div class="feature-card fcd3">
+                    <img src="./assets/img/features/f3.png" class="feature-img">
+                    <a class="save-money">Save Money</a>
+                </div>
+                <div class="feature-card fcd4">
+                    <img src="./assets/img/features/f4.png" class="feature-img">
+                    <a class="promotion">Promotion</a>
+                </div>
+                <div class="feature-card fcd5">
+                    <img src="./assets/img/features/f5.png" class="feature-img">
+                    <a class="happy-sell">Happy Sell</a>
+                </div>
+                <div class="feature-card fcd6">
+                    <img src="./assets/img/features/f6.png" class="feature-img">
+                    <a class="support">F24/7 Support</a>
+                </div>
+
+            </div>
+        </section>
+        <section class="feature-product section" id="feature-product">
+            <h1 class="fph1">Feature Product</h1>
+            <p class="fpp1">Summer Collection New Modren Design</p>
+            <div class="main-product">
+            <div class="product">
+                <img src="./assets/img/products/f1.jpg">
+                <p>Adidas</p>
+                <h2>Cartoon Astronaut T-Shirts</h2>
+                <div class="rating">
+                    <span onclick="rate(this ,1)">★</span>
+                    <span onclick="rate(this ,2)">★</span>
+                    <span onclick="rate(this ,3)">★</span>
+                    <span onclick="rate(this ,4)">★</span>
+                    <span onclick="rate(this ,5)">★</span>
+                </div>
+                <p class="text">Rating: 0</p>
+                <div class="rate">
+                <h1>$78</h1>
+                <a href="#" class="cartbtn"><i class="ri-shopping-cart-line"></i></a>
+                </div>
+
+
+
+            </div>
+            <div class="product">
+                <img src="./assets/img/products/f2.jpg">
+                <p>Adidas</p>
+                <h2>Cartoon Astronaut T-Shirts</h2>
+                <div class="rating">
+                    <span onclick="rate(this ,1)">★</span>
+                    <span onclick="rate(this ,2)">★</span>
+                    <span onclick="rate(this ,3)">★</span>
+                    <span onclick="rate(this ,4)">★</span>
+                    <span onclick="rate(this ,5)">★</span>
+                </div>
+                <p class="text">Rating: 0</p>
+                <div class="rate">
+                <h1>$78</h1>
+                <a href="#" class="cartbtn"><i class="ri-shopping-cart-line"></i></a>
+                </div>
+
+
+
+            </div>
+            <div class="product">
+                <img src="./assets/img/products/f3.jpg">
+                <p>Adidas</p>
+                <h2>Cartoon Astronaut T-Shirts</h2>
+                <div class="rating">
+                    <span onclick="rate(this ,1)">★</span>
+                    <span onclick="rate(this ,2)">★</span>
+                    <span onclick="rate(this ,3)">★</span>
+                    <span onclick="rate(this ,4)">★</span>
+                    <span onclick="rate(this ,5)">★</span>
+                </div>
+                <p class="text">Rating: 0</p>
+                <div class="rate">
+                <h1>$78</h1>
+                <a href="#" class="cartbtn"><i class="ri-shopping-cart-line"></i></a>
+                </div>
+
+
+            </div>
+            <div class="product">
+                <img src="./assets/img/products/f4.jpg">
+                <p>Adidas</p>
+                <h2>Cartoon Astronaut T-Shirts</h2>
+                <div class="rating">
+                    <span onclick="rate(this ,1)">★</span>
+                    <span onclick="rate(this ,2)">★</span>
+                    <span onclick="rate(this ,3)">★</span>
+                    <span onclick="rate(this ,4)">★</span>
+                    <span onclick="rate(this ,5)">★</span>
+                </div>
+                <p class="text">Rating: 0</p>
+                <div class="rate">
+                <h1>$78</h1>
+                <a href="#" class="cartbtn"><i class="ri-shopping-cart-line"></i></a>
+                </div>
+                </div>
+                
+            <div class="product">
+                <img src="./assets/img/products/f5.jpg">
+                <p>Adidas</p>
+                <h2>Cartoon Astronaut T-Shirts</h2>
+                <div class="rating">
+                    <span onclick="rate(this ,1)">★</span>
+                    <span onclick="rate(this ,2)">★</span>
+                    <span onclick="rate(this ,3)">★</span>
+                    <span onclick="rate(this ,4)">★</span>
+                    <span onclick="rate(this ,5)">★</span>
+                </div>
+                <p class="text">Rating: 0</p>
+                <div class="rate">
+                <h1>$78</h1>
+                <a href="#" class="cartbtn"><i class="ri-shopping-cart-line"></i></a>
+                </div>
+                </div>
+            <div class="product">
+                <img src="./assets/img/products/f6.jpg">
+                <p>Adidas</p>
+                <h2>Cartoon Astronaut T-Shirts</h2>
+                <div class="rating">
+                    <span onclick="rate(this ,1)">★</span>
+                    <span onclick="rate(this ,2)">★</span>
+                    <span onclick="rate(this ,3)">★</span>
+                    <span onclick="rate(this ,4)">★</span>
+                    <span onclick="rate(this ,5)">★</span>
+                </div>
+                <p class="text">Rating: 0</p>
+                <div class="rate">
+                <h1>$78</h1>
+                <a href="#" class="cartbtn"><i class="ri-shopping-cart-line"></i></a>
+                </div> 
+                </div> 
+            <div class="product">
+                <img src="./assets/img/products/f7.jpg">
+                <p>Adidas</p>
+                <h2>Cartoon Astronaut T-Shirts</h2>
+                <div class="rating">
+                    <span onclick="rate(this ,1)">★</span>
+                    <span onclick="rate(this ,2)">★</span>
+                    <span onclick="rate(this ,3)">★</span>
+                    <span onclick="rate(this ,4)">★</span>
+                    <span onclick="rate(this ,5)">★</span>
+                </div>
+                <p class="text">Rating: 0</p>
+                <div class="rate">
+                <h1>$78</h1>
+                <a href="#" class="cartbtn"><i class="ri-shopping-cart-line"></i></a>
+                </div>
+                </div>
+            <div class="product">
+                <img src="./assets/img/products/f8.jpg">
+                <p>Adidas</p>
+                <h2>Cartoon Astronaut T-Shirts</h2>
+                <div class="rating">
+                    <span onclick="rate(this ,1)">★</span>
+                    <span onclick="rate(this ,2)">★</span>
+                    <span onclick="rate(this ,3)">★</span>
+                    <span onclick="rate(this ,4)">★</span>
+                    <span onclick="rate(this ,5)">★</span>
+                </div>
+                <p class="text">Rating: 0</p>
+                <div class="rate">
+                <h1>$78</h1>
+                <a href="#" class="cartbtn"><i class="ri-shopping-cart-line"></i></a>
+                </div>
+                </div>
+
+
+
+            </div>
+        </section>
+        <section class="ad-section section" id="ad-section">
+        <img src="./assets/img/banner/b2.jpg">
+        <div class="ad-content">
+        <p>Repair Services</p>
+        <h1>up to <span class="ad-span">70% off</span> -all t-Shirts & Accessories</h1>
+        <a href="#">Explore More</a>
+        </div>
+        </section> 
+        <section class="new-arrival-product section" id="new-arrival-product">
+            <h1 class="fph1">New Arrivaals</h1>
+            <p class="fpp1">Summer Collection New Modren Design</p>
+            <div class="main-product">
+            <div class="product">
+                <img src="./assets/img/products/n1.jpg">
+                <p>Adidas</p>
+                <h2>Cartoon Astronaut T-Shirts</h2>
+                <div class="rating">
+                    <span onclick="rate(this ,1)">★</span>
+                    <span onclick="rate(this ,2)">★</span>
+                    <span onclick="rate(this ,3)">★</span>
+                    <span onclick="rate(this ,4)">★</span>
+                    <span onclick="rate(this ,5)">★</span>
+                </div>
+                <p class="text">Rating: 0</p>
+                <div class="rate">
+                <h1>$78</h1>
+                <a href="#" class="cartbtn"><i class="ri-shopping-cart-line"></i></a>
+                </div>
+
+
+
+            </div>
+            <div class="product">
+                <img src="./assets/img/products/n2.jpg">
+                <p>Adidas</p>
+                <h2>Cartoon Astronaut T-Shirts</h2>
+                <div class="rating">
+                    <span onclick="rate(this ,1)">★</span>
+                    <span onclick="rate(this ,2)">★</span>
+                    <span onclick="rate(this ,3)">★</span>
+                    <span onclick="rate(this ,4)">★</span>
+                    <span onclick="rate(this ,5)">★</span>
+                </div>
+                <p class="text">Rating: 0</p>
+                <div class="rate">
+                <h1>$78</h1>
+                <a href="#" class="cartbtn"><i class="ri-shopping-cart-line"></i></a>
+                </div>
+
+
+
+            </div>
+            <div class="product">
+                <img src="./assets/img/products/n3.jpg">
+                <p>Adidas</p>
+                <h2>Cartoon Astronaut T-Shirts</h2>
+                <div class="rating">
+                    <span onclick="rate(this ,1)">★</span>
+                    <span onclick="rate(this ,2)">★</span>
+                    <span onclick="rate(this ,3)">★</span>
+                    <span onclick="rate(this ,4)">★</span>
+                    <span onclick="rate(this ,5)">★</span>
+                </div>
+                <p class="text">Rating: 0</p>
+                <div class="rate">
+                <h1>$78</h1>
+                <a href="#" class="cartbtn"><i class="ri-shopping-cart-line"></i></a>
+                </div>
+
+
+            </div>
+            <div class="product">
+                <img src="./assets/img/products/n4.jpg">
+                <p>Adidas</p>
+                <h2>Cartoon Astronaut T-Shirts</h2>
+                <div class="rating">
+                    <span onclick="rate(this ,1)">★</span>
+                    <span onclick="rate(this ,2)">★</span>
+                    <span onclick="rate(this ,3)">★</span>
+                    <span onclick="rate(this ,4)">★</span>
+                    <span onclick="rate(this ,5)">★</span>
+                </div>
+                <p class="text">Rating: 0</p>
+                <div class="rate">
+                <h1>$78</h1>
+                <a href="#" class="cartbtn"><i class="ri-shopping-cart-line"></i></a>
+                </div>
+                </div>
+                
+            <div class="product">
+                <img src="./assets/img/products/n5.jpg">
+                <p>Adidas</p>
+                <h2>Cartoon Astronaut T-Shirts</h2>
+                <div class="rating">
+                    <span onclick="rate(this ,1)">★</span>
+                    <span onclick="rate(this ,2)">★</span>
+                    <span onclick="rate(this ,3)">★</span>
+                    <span onclick="rate(this ,4)">★</span>
+                    <span onclick="rate(this ,5)">★</span>
+                </div>
+                <p class="text">Rating: 0</p>
+                <div class="rate">
+                <h1>$78</h1>
+                <a href="#" class="cartbtn"><i class="ri-shopping-cart-line"></i></a>
+                </div>
+                </div>
+            <div class="product">
+                <img src="./assets/img/products/n6.jpg">
+                <p>Adidas</p>
+                <h2>Cartoon Astronaut T-Shirts</h2>
+                <div class="rating">
+                    <span onclick="rate(this ,1)">★</span>
+                    <span onclick="rate(this ,2)">★</span>
+                    <span onclick="rate(this ,3)">★</span>
+                    <span onclick="rate(this ,4)">★</span>
+                    <span onclick="rate(this ,5)">★</span>
+                </div>
+                <p class="text">Rating: 0</p>
+                <div class="rate">
+                <h1>$78</h1>
+                <a href="#" class="cartbtn"><i class="ri-shopping-cart-line"></i></a>
+                </div> 
+                </div> 
+            <div class="product">
+                <img src="./assets/img/products/n7.jpg">
+                <p>Adidas</p>
+                <h2>Cartoon Astronaut T-Shirts</h2>
+                <div class="rating">
+                    <span onclick="rate(this ,1)">★</span>
+                    <span onclick="rate(this ,2)">★</span>
+                    <span onclick="rate(this ,3)">★</span>
+                    <span onclick="rate(this ,4)">★</span>
+                    <span onclick="rate(this ,5)">★</span>
+                </div>
+                <p class="text">Rating: 0</p>
+                <div class="rate">
+                <h1>$78</h1>
+                <a href="#" class="cartbtn"><i class="ri-shopping-cart-line"></i></a>
+                </div>
+                </div>
+            <div class="product">
+                <img src="./assets/img/products/n8.jpg">
+                <p>Adidas</p>
+                <h2>Cartoon Astronaut T-Shirts</h2>
+                <div class="rating">
+                    <span onclick="rate(this ,1)">★</span>
+                    <span onclick="rate(this ,2)">★</span>
+                    <span onclick="rate(this ,3)">★</span>
+                    <span onclick="rate(this ,4)">★</span>
+                    <span onclick="rate(this ,5)">★</span>
+                </div>
+                <p class="text">Rating: 0</p>
+                <div class="rate">
+                <h1>$78</h1>
+                <a href="#" class="cartbtn"><i class="ri-shopping-cart-line"></i></a>
+                </div>
+                </div>
+            </div> <!-- main-product close -->
+    </section> <!-- new-arrival-product close -->
+
+    <section class="h-banner-section section" id="h-banner-section">
+        <div class="main-banner-h">
+
+            <div class="col1">
+                <img src="./assets/img/banner/b17.jpg" class="img1">
+             <div class="content-ban">
+                <p class="p-ban">Crazy deals</p>
+                <h2 class="h2-ban">buy 1 get 1 free</h2>
+                <p class="p-ban">The best classic dresses on sale at cora</p>
+                <a href="#" class="link-ban">Learn more</a>
+                </div>
+            </div>
+
+            <div class="col2">
+                <img src="./assets/img/banner/b10.jpg" class="img2">
+<div class="content-ban">
+                <p>Spring/summer</p>
+                <h2>Upcoming Season</h2>
+                <p>The best classic dresses on sale at cora</p>
+                <a href="#" class="link-ban">Collection</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="main2-banner-h">
+
+    <div class="b-col1">
+        <img src="./assets/img/banner/b7.jpg">
+        <div class="content1-ban">
+            <h2>SEASONAL SALE</h2>
+            <p>Winter Collection -50% off</p>
+        </div>
+    </div>
+
+    <div class="b-col2">
+        <img src="./assets/img/banner/b4.jpg">
+        <div class="content1-ban">
+            <h2>NEW FOOTWEAR COLLECTION</h2>
+            <p>Spring / Summer 2022</p>
+        </div>
+    </div>
+
+    <div class="b-col3">
+        <img src="./assets/img/banner/b18.jpg">
+        <div class="content1-ban">
+            <h2>T-SHIRTS</h2>
+            <p>New Trendy Prints</p>
+        </div>
+    </div>
+
+</div>
+    </section>
+    <!-- News banner section -->
+    <section class="news-banner section" id="news-banner">
+    <img src="./assets/img/banner/image.png">
+    <div class="news-content">
+        <div class="news-col1">
+            <h2>Sign Up for Newslatter</h2>
+            <p>Get E-mail updates about our lasted shop and <span>Special offer</span></p>
+        </div>
+        <div class="news-col2">
+            <input type="email" placeholder="Your Email Address">
+            <button>Sign Up</button>
+        </div>
+    </div>
+
+    </section>
+    </main>
+    <footer class="footer">
+    </footer>
     <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
