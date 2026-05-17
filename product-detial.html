@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product-details</title>
+    <!-- Remix Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+        integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awosome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Css -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- navigation Memnu -->
+    <header class="header">
+        <nav>
+            <div class="logo">
+                <img src="./assets/img/logo.png" class="logo-image">
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list" id="nav-list">
+
+                    <div class="nav-close" id="nav-close">
+             <i class="ri-close-large-line"></i>
+            </div>
+
+                    <li><a href="./index.html" class="nav-links">Home</a></li>
+                    <li><a href="./shop.html" class="nav-links">Shop</a></li>
+                    <li><a href="./blog.html" class="nav-links">Blog</a></li>
+                    <li><a href="./about.html" class="nav-links">About</a></li>
+                    <li><a href="./contact.html" class="nav-links">Contact</a></li>
+                    <li><a href="" class="nav-links"><i class="ri-shopping-bag-line"></i></a></li>
+                </ul>
+            </div>
+            <div class="nav-open" id="nav-open">
+             <i class="ri-menu-line"></i>
+            </div>
+        </nav>
+    </header>
+    <main id="main" class="main">
+    <section id="product-details" class="product-details section">
+        <div class="detail-main">
+        <div class="details-c1">
+        <img src="./assets/img/products/f1.jpg" id="bigImage" class="bigImage">
+        <div class="js-gallery">
+        <img src="./assets/img/products/f1.jpg" class="details-img" onclick="changeImage(this.src)">
+        <img src="./assets/img/products/f2.jpg" class="details-img" onclick="changeImage(this.src)">
+        <img src="./assets/img/products/f3.jpg" class="details-img" onclick="changeImage(this.src)">
+        <img src="./assets/img/products/f4.jpg" class="details-img" onclick="changeImage(this.src)">
+        </div>
+        </div>
+        <div class="details-c2">
+         <p>Home/T-shirt</p>
+         <h2>Men's Fashion T Shirst</h2>
+         <h1>$139.00</h1>
+         <form>
+            <select clss="form-select">
+                <option>Medium</option>
+                <option selected>Large</option>
+                <option>X-Large</option>
+                <option>XX-Large</option>
+            </select>
+         </form>
+         <div class="detail-btn">
+            <input type="number" name="quantity" min="1" max="10" value="1" class="input-quantity">
+            <a href="#">Add To Cart</a>
+         </div>
+         <h3>Product Details</h3>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non magnam, ad eveniet earum quod molestias? Laboriosam non iure, fuga repudiandae maxime numquam. Id recusandae corrupti velit. Harum tempore ducimus itaque!
+         Doloremque, itaque ducimus vero eius suscipit deleniti deserunt, quaerat quas quam molestias maiores! Esse consequatur atque sapiente. Eum necessitatibus repellendus quaerat, earum porro !</p>
+
+        </div>
+        </div>
+
+    </section>
+    <!-- More Product Section in product details -->
+     <section class="product-details section"> 
+        <h2 class="h1-product-details">More Products</h2>
+        <div class="main-product">
+         <div class="product">
+                <img src="./assets/img/products/f5.jpg">
+                <p>Adidas</p>
+                <h2>Cartoon Astronaut T-Shirts</h2>
+                <div class="rating">
+                    <span onclick="rate(this ,1)">★</span>
+                    <span onclick="rate(this ,2)">★</span>
+                    <span onclick="rate(this ,3)">★</span>
+                    <span onclick="rate(this ,4)">★</span>
+                    <span onclick="rate(this ,5)">★</span>
+                </div>
+                <p class="text">Rating: 0</p>
+                <div class="rate">
+                <h1>$78</h1>
+                <a href="#" class="cartbtn"><i class="ri-shopping-cart-line"></i></a>
+                </div>
+                </div>
+            <div class="product">
+                <img src="./assets/img/products/f6.jpg">
+                <p>Adidas</p>
+                <h2>Cartoon Astronaut T-Shirts</h2>
+                <div class="rating">
+                    <span onclick="rate(this ,1)">★</span>
+                    <span onclick="rate(this ,2)">★</span>
+                    <span onclick="rate(this ,3)">★</span>
+                    <span onclick="rate(this ,4)">★</span>
+                    <span onclick="rate(this ,5)">★</span>
+                </div>
+                <p class="text">Rating: 0</p>
+                <div class="rate">
+                <h1>$78</h1>
+                <a href="#" class="cartbtn"><i class="ri-shopping-cart-line"></i></a>
+                </div> 
+                </div> 
+            <div class="product">
+                <img src="./assets/img/products/f7.jpg">
+                <p>Adidas</p>
+                <h2>Cartoon Astronaut T-Shirts</h2>
+                <div class="rating">
+                    <span onclick="rate(this ,1)">★</span>
+                    <span onclick="rate(this ,2)">★</span>
+                    <span onclick="rate(this ,3)">★</span>
+                    <span onclick="rate(this ,4)">★</span>
+                    <span onclick="rate(this ,5)">★</span>
+                </div>
+                <p class="text">Rating: 0</p>
+                <div class="rate">
+                <h1>$78</h1>
+                <a href="#" class="cartbtn"><i class="ri-shopping-cart-line"></i></a>
+                </div>
+                </div>
+            <div class="product">
+                <img src="./assets/img/products/f8.jpg">
+                <p>Adidas</p>
+                <h2>Cartoon Astronaut T-Shirts</h2>
+                <div class="rating">
+                    <span onclick="rate(this ,1)">★</span>
+                    <span onclick="rate(this ,2)">★</span>
+                    <span onclick="rate(this ,3)">★</span>
+                    <span onclick="rate(this ,4)">★</span>
+                    <span onclick="rate(this ,5)">★</span>
+                </div>
+                <p class="text">Rating: 0</p>
+                <div class="rate">
+                <h1>$78</h1>
+                <a href="#" class="cartbtn"><i class="ri-shopping-cart-line"></i></a>
+                </div>
+                </div>
+                </div>
+    </section> 
+    <section class="news-banner section" id="news-banner">
+    <img src="./assets/img/banner/image.png">
+    <div class="news-content">
+        <div class="news-col1">
+            <h2>Sign Up for Newslatter</h2>
+            <p>Get E-mail updates about our lasted shop and <span>Special offer</span></p>
+        </div>
+        <div class="news-col2">
+            <input type="email" placeholder="Your Email Address">
+            <button>Sign Up</button>
+        </div>
+    </div>
+
+    </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-c1">
+        <img src="./assets/img/logo.png">
+        <p>Contact</p>
+        <p>Address : ....</p>
+        <p>Phone : ...</p>
+        <p>Hours : 10:00am to 7:00pm , Monday - Saturday</p>
+        <p>Follow Us </p>
+        <p>
+            <span><i class="ri-facebook-circle-fill"></i></span>
+            <span><i class="ri-twitter-fill"></i></span>
+            <span><i class="ri-youtube-fill"></i></span>
+            <span><i class="ri-instagram-fill"></i></span>
+            <span><i class="ri-pinterest-fill"></i></span>
+        </p>
+      </div>
+      <div class="footer-c2">
+        <div class="f-c2-c1">
+            <h2>About</h2>
+            <p>Delivery Information</p>
+            <p>Privacy Policy</p>
+            <p>Terms & Conditions</p>
+            <p>Contact Us</p>
+        </div>
+        <div class="f-c2-c2">
+            <h2>About Us</h2>
+            <p>Sign in</p>
+            <p>View Cart</p>
+            <p>My Wishlist</p>
+            <p>Track My order</p>
+            <p>Help</p>
+        </div>
+      </div>
+      <div class="footer-c3">
+        <h2>Instal App</h2>
+        <p>From AppStore or Google Play</p>
+        <div class="footer-img">
+            <img src="./assets/img/pay/app.jpg">
+            <img src="./assets/img/pay/play.jpg">
+        </div>
+        <p>Secured Payment Gateaways</p>
+        <img src="./assets/img/pay/pay.png" class="payment-footer">
+      </div>
+    </footer>
+<script src="./assets/js/script.js"></script>
+</body>
+</html>
